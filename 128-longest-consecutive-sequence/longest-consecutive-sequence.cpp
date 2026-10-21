@@ -7,10 +7,9 @@ public:
         for(int x:set){
             if(!set.count(x-1)){
                 int length=1;
-                int curr=x;
-                while(set.count(curr+1)){
+                while(set.count(x+1)){
                     length++;
-                    curr++;
+                    x++;
                 }
                ans=max(length,ans);
             }
