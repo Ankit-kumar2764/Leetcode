@@ -4,8 +4,10 @@ public:
         string ans="";
         sort(v.begin(),v.end());
         int n=v.size();
-        string first=v[0],last=v[n-1];
-        for(int i=0;i<min(first.size(),last.size());i++){
+        string first=v[0];
+        string last=v[n-1];
+        int m=min(first.size(),last.size());
+        for(int i=0;i<m;i++){
             if(first[i]!=last[i]){
                 return ans;
             }
