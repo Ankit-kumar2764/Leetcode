@@ -2,7 +2,7 @@ class Solution {
 public:
     bool judgeSquareSum(int c) {
         int a=0;
-        long long b=sqrt(c);
+         long b=sqrt(c);
         while(a<=b){
             long long sumsqure=a*a+b*b;
             if(sumsqure==c){
